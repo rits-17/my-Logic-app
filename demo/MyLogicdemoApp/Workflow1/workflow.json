@@ -9,6 +9,15 @@
                     "statusCode": 200,
                     "body": "@{triggerBody()?['Name']} how are you?"
                 },
+                "runAfter": {
+                    "Compose": [
+                        "SUCCEEDED"
+                    ]
+                }
+            },
+            "Compose": {
+                "type": "Compose",
+                "inputs": "@{triggerBody()?['Name']} ",
                 "runAfter": {}
             }
         },
