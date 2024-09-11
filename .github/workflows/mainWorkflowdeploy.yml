@@ -25,7 +25,7 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CC473D0EB8614B81B5CB63DC9AB7F75B }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2BBF50F76EC940E9A5B2998C7E36188E }}
           enable-AzPSSession: false
-          auth-type: 'sp'  # Use 'sp' instead of SERVICE_PRINCIPAL for service principal authentication
+          auth-type: 'SERVICE_PRINCIPAL'  # Use 'sp' instead of SERVICE_PRINCIPAL for service principal authentication
 
       - name: Deploy Logic App Workflow
         uses: azure/CLI@v1
