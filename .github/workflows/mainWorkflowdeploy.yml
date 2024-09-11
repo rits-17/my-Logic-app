@@ -17,7 +17,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E0B1AB11D96B40CD8910EBD737FEED84 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_CC473D0EB8614B81B5CB63DC9AB7F75B }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2BBF50F76EC940E9A5B2998C7E36188E }}
 
       - name: Deploy Logic App Workflow
         uses: azure/CLI@v1
