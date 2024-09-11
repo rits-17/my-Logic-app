@@ -1,0 +1,15 @@
+{
+    "azureLogicAppsStandard.deploySubpath": ".",
+    "azureLogicAppsStandard.projectSubpath":".\\demo\\MyLogicdemoApp",
+    "azureLogicAppsStandard.projectLanguage": "JavaScript",
+    "azureLogicAppsStandard.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.suppressProject": true,
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Users\\ritika.h.verma\\.azurelogicapps\\dependencies\\DotNetSDK;${env:PATH}"
+    },
+    "omnisharp.dotNetCliPaths": [
+        "C:\\Users\\ritika.h.verma\\.azurelogicapps\\dependencies\\DotNetSDK"
+    ],
+    "azurite.location": "C:\\Users\\ritika.h.verma\\.azurelogicapps\\.azurite"
+}
